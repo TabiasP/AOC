@@ -24,7 +24,6 @@ def part2(data_set):
     sum_array = []
     for i in range(len(to_int) - 2):
         sum = to_int[i] + to_int[i + 1] + to_int[i + 2]
-        print(sum)
         sum_array.append(sum)
     
     for i in range(len(sum_array) - 1):
