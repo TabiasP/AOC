@@ -8,7 +8,6 @@ def day1(data_set):
 
     length = len(data[0])
 
-
     for i in range(length):
         x1 = 0
         x0 = 0
@@ -56,7 +55,6 @@ def findOxygen(data_set, n):
             if int(data_set[i][n]) == 1:
                 oxygen_generator.append(data_set[i])
     
-
     return oxygen_generator
 
 def findCO2(data_set, n):
@@ -89,7 +87,6 @@ def gamma(data_set):
         data_set = findOxygen(data_set, n)
         n+=1
 
-    
     return data_set
 
 def epsilon(data_set):
@@ -100,13 +97,7 @@ def epsilon(data_set):
 
     return data_set
 
-
-
 day2_gamma = int(gamma(data)[0], 2)
 day2_epsilon = int(epsilon(data)[0], 2)
 
-
-
 print("Gamma: ", day2_gamma, "Epsilon:", day2_epsilon, "Total:", day2_epsilon * day2_gamma)
-
-
