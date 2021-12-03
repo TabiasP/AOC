@@ -2,7 +2,7 @@ data_set = """"""
 
 data = data_set.split("\n")
 
-def day1(data_set):
+def part1(data_set):
     gamma = ""
     epsilon = ""
 
@@ -24,14 +24,15 @@ def day1(data_set):
             epsilon += "0"
     return gamma, epsilon
 
-day1_result = day1(data)
+part1_result = part1(data)
 
-gamma_decimal = int(day1_result[0], 2)
-epsilon_decimal = int(day1_result[1], 2)
+gamma_decimal = int(part1_result[0], 2)
+epsilon_decimal = int(part1_result[1], 2)
 total = gamma_decimal * epsilon_decimal
 
 print("Gamma:", gamma_decimal, "Epsilon:", epsilon_decimal, "Total:", total)
 
+############ Part 2 ############
 def findOxygen(data_set, n):
     x0 = 0
     x1 = 0
@@ -97,7 +98,7 @@ def epsilon(data_set):
 
     return data_set
 
-day2_gamma = int(gamma(data)[0], 2)
-day2_epsilon = int(epsilon(data)[0], 2)
+gamma_result = int(gamma(data)[0], 2)
+epsilon_result = int(epsilon(data)[0], 2)
 
-print("Gamma: ", day2_gamma, "Epsilon:", day2_epsilon, "Total:", day2_epsilon * day2_gamma)
+print("Gamma: ", gamma_result, "Epsilon:", epsilon_result, "Total:", epsilon_result * gamma_result)
